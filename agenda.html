@@ -14,16 +14,9 @@
         </div>
         <div class="agenda_container">
             <ul>
-                {% for date in speeldata %}
-                    <li class="agenda_item">
-                        {{date.date}} {{date.city}} {{date.venue_name}}
-                        {% if date.sold_out %}
-                            <p class="sold_out">Uitverkocht</p>
-                        {% else %}
-                            <a href="{{date.ticket_link}}" data-tickets>tickets</a>  
-                        {% endif %}
-                    </li>
-                {% endfor %}
+                <li class="agenda_item">
+                    <a href="{{date.ticket_link}}" data-tickets>tickets</a>
+                </li>
             </ul>
         </div>
     </div>

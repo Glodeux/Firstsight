@@ -1,13 +1,13 @@
-{% load static %}
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="Lugungu Entertainment" content="width=device-width, initial-scale=1.0">   
-        <title>Lugungu Entertainment</title>
-        <script src="{% static 'home/script.js' %}" defer></script>
-        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Lugungu Entertainment</title>
+</head>
+<body>
     <body class="flex-container">
         <div class="nav_container">
             <a class="nav_item" data-tab-target="#home">Home</a>
@@ -25,20 +25,35 @@
                     <h3>Architectuur</h3>
                     <h3>Art</h3>
                 </div>
-            </div>
         </section>
         <section id="agenda" class="agenda_page" data-tab-content>
-            {% include "home/agenda.html" %}
+            <div class="agenda_container"></div>
+                <div class="title">
+                    <h1>Agenda</h1>
+                </div>
+                <div class="agenda_container">
+                    <ul>
+                        <li class="agenda_item">
+                            <h2>Datum: 15-10-2023</h2>
+                            <h3>Locatie: Lugungu Theater</h3>
+                            <p>Beschrijving: Een avond vol met comedy en muziek.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section id="galerij" class="galerij_page" data-tab-content>
-            {% include "home/galerij.html" %}
-        </section>
-        <section id="koffie" class="nieuwsbrief_page" data-tab-content>
-            {% include "home/koffie.html" %}
+            <div class="title">
+                <h1>Galerij</h1>
+            </div>
+            <div class="text_header">
+                <div><a href="https://youtube.com/@glodi.lugungu?si=xPF86Thql4lh6pVq">Youtube</a></div>
+                <div><h2>Binnekort meer!</h2></div>
+            </div> 
         </section>
         <section class="footer">
-                <div class="footer_item"><a>Privacybeleid</a></div>
-                <div class="footer_item"><a>Colofon</a></div>
+            <div class="footer_item"><a>Privacybeleid</a></div>
+            <div class="footer_item"><a>Colofon</a></div>
         </section>
     </body>
 </html>

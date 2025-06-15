@@ -27,7 +27,7 @@ body {
     padding-top: 80px;
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: var(--background-color); /* fallback color */
-    background-image: url('/static/home/Media/Background01.jpg');
+    background-image: url('image001.jpg');
     background-repeat: no-repeat;
     background-position: top; /* 20px down on y-axis */
     background-attachment: fixed;
